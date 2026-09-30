@@ -1,0 +1,50 @@
+:root {
+  --color-canvas: #ffffff;
+  --color-pearl: #f7fafb;
+  --color-mist: #eaf6f8;
+  --color-ice: #83d3e4;
+  --color-ice-deep: #0a718b;
+  --color-navy: #0a2946;
+  --color-navy-soft: #173c5a;
+  --color-ink-muted: #5b7080;
+  --color-line: #d8e6ea;
+  --color-success: #2f7b6d;
+  --color-error: #a5443d;
+  --color-on-dark: #ffffff;
+
+  --font-display: 'Instrument Serif', Georgia, serif;
+  --font-body: 'Archivo', Arial, sans-serif;
+
+  --radius-control: 0.25rem;
+  --radius-card: 0.75rem;
+  --radius-capsule: 999px;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-28: 7rem;
+  --space-32: 8rem;
+  --space-36: 9rem;
+  --space-40: 10rem;
+
+  --section-pad: clamp(5rem, 8vw, 9rem);
+  --page-gutter: clamp(1.5rem, 4vw, 4rem);
+  --container: 80rem;
+  --reading: 42rem;
+
+  --shadow-assessment: 0 2rem 5rem -2rem rgb(10 41 70 / 32%), 0 0.25rem 1rem rgb(10 41 70 / 8%);
+  --shadow-soft: 0 1rem 3rem -2rem rgb(10 41 70 / 20%);
+
+  --ease-premium: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration-fast: 180ms;
+  --duration-medium: 360ms;
+}

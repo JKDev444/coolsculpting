@@ -1,0 +1,16 @@
+{
+  "project": "coolsculpting",
+  "status": "PASS",
+  "phase": "fast-visual-fidelity-repair",
+  "local_url": "http://127.0.0.1:4177/",
+  "hero_fidelity": "PASS",
+  "reviews_fidelity": "PASS",
+  "results_fidelity": "PASS",
+  "science_fidelity": "PASS",
+  "mobile": "PASS",
+  "tests": "PASS",
+  "owner_review_ready": "YES",
+  "desktop_page_height_css_px": 4514,
+  "comparison_artifact": "artifacts/fidelity/comparisons.png",
+  "completed_at": "2026-09-30"
+}
