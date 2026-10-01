@@ -26,19 +26,14 @@ export function AreaStep({ selected, limitMessage, onToggle }: AreaStepProps) {
               onClick={() => onToggle(area.id)}
             >
               <span className="area-media" aria-hidden="true">
-                {area.image ? (
-                  <img
-                    src={area.image}
-                    alt=""
-                    width={area.width}
-                    height={area.height}
-                    loading="eager"
-                    decoding="async"
-                  />
-                ) : (
-                  <span className="area-placeholder" />
-                )}
-                <span className={`treatment-zone ${area.zoneClass}`} />
+                <img
+                  src={area.image}
+                  alt=""
+                  width={area.width}
+                  height={area.height}
+                  loading="eager"
+                  decoding="async"
+                />
                 <span className="area-check">✓</span>
               </span>
               <span className="area-label">{area.label}</span>

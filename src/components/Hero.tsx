@@ -14,7 +14,7 @@ export function Hero() {
       />
       <div className="hero-photo-panel" aria-hidden="true" />
       <div className="hero-wash" aria-hidden="true" />
-      <div className="hero-inner">
+      <div className="hero-inner hero-content-frame">
         <div className="hero-copy">
           <p className="eyebrow">CoolSculpting Elite® at Omni</p>
           <h1 id="hero-title">

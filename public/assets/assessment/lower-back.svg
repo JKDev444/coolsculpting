@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 120">
+  <defs>
+    <linearGradient id="skin" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f4cfb5"/><stop offset=".55" stop-color="#dca886"/><stop offset="1" stop-color="#c68a68"/></linearGradient>
+    <radialGradient id="ice"><stop stop-color="#8bebff"/><stop offset=".58" stop-color="#29c4ea" stop-opacity=".86"/><stop offset="1" stop-color="#159ac8" stop-opacity=".18"/></radialGradient>
+    <filter id="glow" x="-70%" y="-70%" width="240%" height="240%"><feGaussianBlur stdDeviation="4"/></filter>
+  </defs>
+  <rect width="180" height="120" rx="8" fill="#fbfaf8"/>
+  <path d="M57 0c2 19-7 28-9 46-2 20 8 29 8 44 0 10-3 20-5 30h78c-2-10-5-20-5-30 0-15 10-24 8-44-2-18-11-27-9-46z" fill="url(#skin)"/>
+  <path d="M90 9v74M60 25c17 8 43 8 60 0" fill="none" stroke="#aa6d53" stroke-opacity=".28" stroke-linecap="round"/>
+  <ellipse cx="90" cy="76" rx="39" ry="19" fill="#45d1ef" opacity=".25" filter="url(#glow)"/>
+  <path d="M55 64c20-9 50-9 70 0l-4 22c-19-7-43-7-62 0Z" fill="url(#ice)"/>
+  <path d="M60 101c17-7 43-7 60 0" fill="none" stroke="#a96d53" stroke-opacity=".32"/>
+</svg>

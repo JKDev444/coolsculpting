@@ -3,9 +3,7 @@ import type { BodyAreaId, GoalId, SituationId, TimingId } from './types';
 export interface BodyAreaOption {
   id: BodyAreaId;
   label: string;
-  image?: string;
-  imageAlt: string;
-  zoneClass: string;
+  image: string;
   width: number;
   height: number;
 }
@@ -20,64 +18,58 @@ export const bodyAreas: BodyAreaOption[] = [
   {
     id: 'abdomen',
     label: 'Abdomen',
-    image: '/assets/images/abdomen-detail.jpg',
-    imageAlt: 'Cropped abdomen treatment area',
-    zoneClass: 'zone-abdomen',
-    width: 320,
-    height: 320,
+    image: '/assets/assessment/abdomen.svg',
+    width: 180,
+    height: 120,
   },
   {
     id: 'flanks',
     label: 'Flanks / Love Handles',
-    image: '/assets/images/hero-body.jpg',
-    imageAlt: 'Cropped flank treatment area',
-    zoneClass: 'zone-flanks',
-    width: 1858,
-    height: 612,
+    image: '/assets/assessment/flanks.svg',
+    width: 180,
+    height: 120,
   },
   {
     id: 'upper-arms',
     label: 'Upper Arms',
-    image: '/assets/images/result-05.jpg',
-    imageAlt: 'Cropped upper arm treatment area',
-    zoneClass: 'zone-arms',
-    width: 858,
-    height: 377,
+    image: '/assets/assessment/upper-arms.svg',
+    width: 180,
+    height: 120,
   },
   {
     id: 'thighs',
     label: 'Thighs',
-    image: '/assets/images/result-08.jpg',
-    imageAlt: 'Cropped thigh treatment area',
-    zoneClass: 'zone-thighs',
-    width: 858,
-    height: 390,
+    image: '/assets/assessment/thighs.svg',
+    width: 180,
+    height: 120,
   },
   {
     id: 'lower-back',
     label: 'Lower Back / Bra Area',
-    imageAlt: 'Treatment-area visual placeholder',
-    zoneClass: 'zone-lower-back',
-    width: 320,
-    height: 320,
+    image: '/assets/assessment/lower-back.svg',
+    width: 180,
+    height: 120,
   },
   {
     id: 'chin',
     label: 'Chin / Jawline',
-    image: '/assets/images/result-09.jpg',
-    imageAlt: 'Cropped chin and jawline treatment area',
-    zoneClass: 'zone-chin',
-    width: 858,
-    height: 378,
+    image: '/assets/assessment/chin.svg',
+    width: 180,
+    height: 120,
   },
   {
     id: 'banana-roll',
     label: 'Banana Roll / Under Buttocks',
-    image: '/assets/images/result-07.jpg',
-    imageAlt: 'Cropped lower body treatment area',
-    zoneClass: 'zone-banana',
-    width: 857,
-    height: 297,
+    image: '/assets/assessment/banana-roll.svg',
+    width: 180,
+    height: 120,
+  },
+  {
+    id: 'other' as BodyAreaId,
+    label: 'Other',
+    image: '/assets/assessment/other.svg',
+    width: 180,
+    height: 120,
   },
 ];
 

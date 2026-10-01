@@ -17,7 +17,8 @@
 .hero-photo-panel { position:absolute; inset:0 32.5% 0 28.5%; background:#e7ded2 url('/assets/images/hero-model-v2.png') center 26% / cover no-repeat; }
 .hero-photo-panel::after { position:absolute; inset:0; background:linear-gradient(90deg,#f5f2ed 0%,transparent 15%,transparent 86%,rgb(245 242 237 / 68%) 100%); content:''; }
 .hero-wash { position:absolute; inset:0; background:linear-gradient(90deg,rgb(250 248 245 / 98%) 0%,rgb(250 248 245 / 94%) 25%,transparent 36%,transparent 66%,rgb(241 246 247 / 55%) 78%,rgb(241 246 247 / 92%) 100%); pointer-events:none; }
-.hero-inner { position:relative; z-index:2; display:grid; min-height:44.5rem; grid-template-columns:29% 38% 33%; align-items:start; padding:5.3rem var(--page-gutter) 2rem; }
+.hero-inner { position:relative; z-index:2; display:grid; min-height:44.5rem; grid-template-columns:29% 38% 33%; align-items:start; }
+.hero-content-frame { width:100%; max-width:1360px; margin-inline:auto; padding:5.3rem clamp(32px,4vw,64px) 2rem; }
 .hero-copy { max-width:25rem; padding-top:3.15rem; animation:content-rise 700ms var(--ease-premium) both; }
 .eyebrow { margin:0 0 .85rem; color:var(--color-navy-soft); font-size:.72rem; font-weight:700; letter-spacing:.22em; line-height:1.35; text-transform:uppercase; }
 .hero h1,.section h2,.consultation h2 { margin:0; font-family:var(--font-display); font-weight:400; letter-spacing:-.035em; }
@@ -169,6 +170,7 @@ details[open] .faq-mark::after { transform:rotate(0deg); }
   .hero-photo-panel { inset:0 0 auto 31%; height:39rem; background-position:center 18%; }
   .hero-wash { height:39rem; background:linear-gradient(90deg,#f5f2ed 0%,rgb(245 242 237 / 90%) 35%,transparent 70%); }
   .hero-inner { min-height:auto; grid-template-columns:1fr; gap:2.5rem; padding-top:6.2rem; }
+  .hero-content-frame { padding-inline:var(--page-gutter); }
   .hero-copy { min-height:30rem; padding-top:1.6rem; }
   .hero .assessment { grid-column:1; width:min(100%,42rem); justify-self:center; }
   .experience-grid,.science-layout,.faq-grid { grid-template-columns:1fr; gap:2.8rem; }
