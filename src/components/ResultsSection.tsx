@@ -11,7 +11,7 @@ export function ResultsSection() {
           </div>
           <a className="text-link" href="#assessment">View more results <span aria-hidden="true">→</span></a>
         </div>
-        <div className="result-grid">
+        <div className="result-rail" aria-label="Published patient results" tabIndex={0}>
           {resultItems.map((item, index) => (
             <figure className="result-card" key={item.id}>
               <div className="result-image-wrap">
@@ -26,7 +26,7 @@ export function ResultsSection() {
               </div>
               <figcaption>
                 <strong>Published comparison {String(index + 1).padStart(2, '0')}</strong>
-                <span>Omni patient gallery</span>
+                <span>Real patient result</span>
               </figcaption>
             </figure>
           ))}

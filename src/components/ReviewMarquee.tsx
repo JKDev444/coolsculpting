@@ -5,13 +5,15 @@ function ReviewCard({ item }: { item: ReviewItem }) {
   return (
     <article className="review-card" data-placeholder={placeholder} aria-label={`${item.source}: ${item.author}`}>
       <div className="review-source">
-        <span className="review-g" data-placeholder={placeholder} aria-hidden="true">G</span>
-        <span>{item.source}</span>
+        <span className="review-mark" data-placeholder={placeholder} aria-hidden="true">
+          {placeholder ? '—' : 'O'}
+        </span>
+        <span className="review-origin">{placeholder ? 'Content pending' : item.source}</span>
       </div>
       <blockquote>“{item.quote}”</blockquote>
       <footer>
-        <strong>{item.author}</strong>
-        {placeholder ? <span>Awaiting approved content</span> : <span>First-party testimonial</span>}
+          <strong>— {item.author}</strong>
+          <span>{placeholder ? 'Awaiting approval' : item.source}</span>
       </footer>
     </article>
   );
@@ -24,12 +26,12 @@ export function ReviewMarquee() {
         <div>
           <p className="eyebrow">Real People. Real Experiences.</p>
           <h2 id="reviews-title">What Our Patients Are Saying</h2>
-          <p>Published first-party testimonials and clearly labeled placeholders—never fabricated reviews.</p>
+          <p>Published first-party stories from Omni patients. Unapproved review slots remain clearly identified.</p>
         </div>
         <div className="reviews-badge" aria-label="Review content status">
-          <span className="review-g" aria-hidden="true">G</span>
-          <strong>Review library</strong>
-          <span>Verified content only</span>
+          <span className="review-mark" aria-hidden="true">O</span>
+          <strong>Patient stories</strong>
+          <span>Published content only</span>
         </div>
       </div>
       <div className="review-rails" aria-label="Patient testimonial library">

@@ -16,11 +16,11 @@ export function ExperienceSection() {
           </figcaption>
         </figure>
         <div className="experience-copy">
-          <p className="eyebrow">8 Years of CoolSculpting Experience</p>
+          <p className="eyebrow">Why choose Omni</p>
           <h2 id="experience-title">More Than a Treatment. A Better You.</h2>
           <p className="lead">
             For eight years, Omni has helped South Sound patients explore CoolSculpting with informed,
-            individualized care.
+            individualized care and a treatment map built around their goals.
           </p>
           <p>
             Your plan begins with a conversation—not a package. We listen to what bothers you, assess the

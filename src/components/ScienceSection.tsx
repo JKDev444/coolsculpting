@@ -17,8 +17,8 @@ const scienceSteps = [
     number: '3',
     title: 'Clear',
     copy: 'Over time, the body naturally processes the treated fat cells. Individual results and timing vary.',
-    image: '/assets/images/body-contour.jpg',
-    alt: 'Body contour illustration showing common treatment areas',
+    image: '/assets/images/science-sequence.jpg',
+    alt: 'Illustration showing the natural processing of treated fat cells over time',
   },
 ];
 

@@ -7,10 +7,11 @@ export function Footer() {
           <small>Aesthetics &amp; Wellness</small>
         </a>
         <nav aria-label="Footer navigation">
-          <a href="#experience">Experience</a>
+          <a href="#experience">CoolSculpting</a>
           <a href="#results">Results</a>
-          <a href="#planning">Planning</a>
+          <a href="#planning">Pricing</a>
           <a href="#faq">FAQs</a>
+          <a href="#consultation">Contact</a>
         </nav>
         <a className="footer-phone" href="tel:+13603523065">(360) 352-3065</a>
       </div>

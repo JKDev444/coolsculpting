@@ -5,13 +5,14 @@ export function Hero() {
     <section className="hero" id="top" aria-labelledby="hero-title">
       <img
         className="hero-media"
-        src="/assets/images/hero-body.jpg"
+        src="/assets/images/body-contour.jpg"
         alt=""
-        width="1858"
-        height="612"
+        width="320"
+        height="320"
         loading="eager"
         fetchPriority="high"
       />
+      <div className="hero-photo-panel" aria-hidden="true" />
       <div className="hero-wash" aria-hidden="true" />
       <div className="hero-inner">
         <div className="hero-copy">
@@ -24,10 +25,10 @@ export function Hero() {
           <p className="hero-deck">
             Reduce stubborn fat. No surgery. No downtime. Real results.
           </p>
-          <ul className="hero-trust" aria-label="Why patients choose Omni">
-            <li><span aria-hidden="true">✓</span> 8 years of experience</li>
-            <li><span aria-hidden="true">✓</span> CoolSculpting Elite®</li>
-            <li><span aria-hidden="true">✓</span> Complimentary consultation</li>
+          <ul className="hero-proof" aria-label="CoolSculpting highlights">
+            <li><span aria-hidden="true">✓</span> FDA-cleared</li>
+            <li><span aria-hidden="true">✓</span> No surgery</li>
+            <li><span aria-hidden="true">✓</span> Real patient results</li>
           </ul>
         </div>
         <Assessment />

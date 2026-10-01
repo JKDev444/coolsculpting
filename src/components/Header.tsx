@@ -1,11 +1,11 @@
 import { useState } from 'react';
 
 const links = [
-  ['Experience', '#experience'],
-  ['Reviews', '#reviews'],
+  ['CoolSculpting', '#experience'],
+  ['How It Works', '#science'],
   ['Results', '#results'],
-  ['How it works', '#science'],
-  ['Planning', '#planning'],
+  ['Why Omni', '#planning'],
+  ['Pricing', '#planning'],
   ['FAQs', '#faq'],
 ];
 
@@ -31,14 +31,17 @@ export function Header() {
       </button>
       <nav id="primary-navigation" className="primary-nav" data-open={open} aria-label="Primary navigation">
         {links.map(([label, href]) => (
-          <a href={href} key={href} onClick={() => setOpen(false)}>
+          <a href={href} key={label} onClick={() => setOpen(false)}>
             {label}
           </a>
         ))}
       </nav>
-      <a className="header-cta" href="#assessment">
-        Start assessment <span aria-hidden="true">→</span>
-      </a>
+      <div className="header-actions">
+        <a className="header-phone" href="tel:+13603523065">(360) 352-3065</a>
+        <a className="header-cta" href="#assessment">
+          Schedule a consultation <span aria-hidden="true">→</span>
+        </a>
+      </div>
     </header>
   );
 }

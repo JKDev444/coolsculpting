@@ -1,11 +1,11 @@
 .assessment {
-  width: min(100%, 35rem);
+  width: min(100%, 31rem);
   border: 1px solid rgb(216 230 234 / 90%);
-  border-radius: var(--radius-card);
-  background: rgb(255 255 255 / 97%);
+  border-radius: 0.7rem;
+  background: rgb(255 255 255 / 98%);
   box-shadow: var(--shadow-assessment);
   color: var(--color-navy);
-  padding: clamp(1.3rem, 2vw, 1.65rem);
+  padding: 1.45rem;
 }
 
 .assessment-topline {
@@ -15,7 +15,7 @@
   color: var(--color-ice-deep);
   font-size: 0.68rem;
   font-weight: 700;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.17em;
   text-transform: uppercase;
 }
 
@@ -27,11 +27,11 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 0.35rem;
-  margin: 0.7rem 0 1rem;
+  margin: 0.65rem 0 0.85rem;
 }
 
 .assessment-progress span {
-  height: 0.2rem;
+  height: 0.18rem;
   background: var(--color-line);
   transition: background var(--duration-medium) var(--ease-premium);
 }
@@ -44,18 +44,18 @@
 .assessment-result h3 {
   margin: 0;
   font-family: var(--font-display);
-  font-size: clamp(1.9rem, 2.7vw, 2.3rem);
+  font-size: clamp(2rem, 2.55vw, 2.45rem);
   font-weight: 400;
-  line-height: 1.02;
   letter-spacing: -0.025em;
+  line-height: 0.98;
 }
 
 .assessment-intro {
-  max-width: 30rem;
-  margin: 0.65rem 0 1rem;
+  max-width: 29rem;
+  margin: 0.55rem 0 0.8rem;
   color: var(--color-ink-muted);
-  font-size: 0.88rem;
-  line-height: 1.5;
+  font-size: 0.84rem;
+  line-height: 1.4;
 }
 
 .assessment-fieldset {
@@ -68,10 +68,10 @@
 .assessment-fieldset legend {
   float: left;
   width: 100%;
-  margin: 0 0 0.18rem;
-  font-size: 0.92rem;
+  margin: 0 0 0.12rem;
+  font-size: 0.88rem;
   font-weight: 700;
-  line-height: 1.35;
+  line-height: 1.3;
 }
 
 .assessment-fieldset legend + * {
@@ -79,9 +79,9 @@
 }
 
 .assessment-hint {
-  margin: 0 0 0.85rem;
+  margin: 0 0 0.65rem;
   color: var(--color-ink-muted);
-  font-size: 0.875rem;
+  font-size: 0.78rem;
 }
 
 .area-grid {
@@ -92,7 +92,7 @@
 
 .area-card {
   min-width: 0;
-  min-height: 5.65rem;
+  min-height: 6.7rem;
   overflow: hidden;
   border: 1px solid var(--color-line);
   border-radius: var(--radius-control);
@@ -117,7 +117,7 @@
 .area-media {
   position: relative;
   display: block;
-  height: 3.1rem;
+  height: 4.2rem;
   overflow: hidden;
   background: var(--color-mist);
 }
@@ -126,7 +126,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: saturate(0.78) contrast(0.94);
+  filter: saturate(0.8) contrast(0.95);
 }
 
 .area-placeholder {
@@ -150,12 +150,12 @@
 
 .treatment-zone {
   position: absolute;
-  border: 1px solid rgb(255 255 255 / 80%);
+  border: 1px solid rgb(255 255 255 / 82%);
   border-radius: 50%;
   background: rgb(61 195 226 / 65%);
   box-shadow: 0 0 1rem rgb(80 210 236 / 65%);
   mix-blend-mode: screen;
-  opacity: 0.78;
+  opacity: 0.82;
   transition: opacity var(--duration-fast) ease, transform var(--duration-fast) ease;
 }
 
@@ -174,8 +174,8 @@
 
 .area-check {
   position: absolute;
-  top: 0.35rem;
-  right: 0.35rem;
+  top: 0.3rem;
+  right: 0.3rem;
   display: grid;
   width: 1.25rem;
   height: 1.25rem;
@@ -196,37 +196,38 @@
 }
 
 .area-label {
-  display: block;
-  min-height: 2.45rem;
-  padding: 0.35rem 0.3rem;
-  font-size: 0.72rem;
+  display: grid;
+  min-height: 2.5rem;
+  place-items: center;
+  padding: 0.3rem 0.25rem;
+  font-size: 0.68rem;
   font-weight: 700;
-  line-height: 1.25;
+  line-height: 1.2;
   text-align: center;
 }
 
 .area-status {
-  min-height: 1.2rem;
-  margin: 0.45rem 0 0;
+  min-height: 1rem;
+  margin: 0.35rem 0 0;
   color: var(--color-ink-muted);
-  font-size: 0.875rem;
+  font-size: 0.72rem;
 }
 
 .choice-list {
   display: grid;
-  gap: 0.55rem;
+  gap: 0.5rem;
 }
 
 .choice-card {
   position: relative;
   display: grid;
+  min-height: 4.1rem;
   grid-template-columns: 1.1rem 1fr;
-  gap: 0.8rem;
+  gap: 0.75rem;
   align-items: center;
-  min-height: 4.4rem;
   border: 1px solid var(--color-line);
   border-radius: var(--radius-control);
-  padding: 0.75rem 0.9rem;
+  padding: 0.7rem 0.85rem;
   transition: background var(--duration-fast) ease, border-color var(--duration-fast) ease;
 }
 
@@ -267,26 +268,26 @@
 }
 
 .choice-card strong {
-  font-size: 0.9rem;
+  font-size: 0.88rem;
 }
 
 .choice-card small {
   margin-top: 0.1rem;
   color: var(--color-ink-muted);
-  font-size: 0.875rem;
-  line-height: 1.35;
+  font-size: 0.75rem;
+  line-height: 1.3;
 }
 
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 0.8rem;
+  gap: 0.7rem;
 }
 
 .contact-field > label {
   display: block;
-  margin-bottom: 0.32rem;
-  font-size: 0.875rem;
+  margin-bottom: 0.25rem;
+  font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -294,11 +295,11 @@
 
 .contact-field input {
   width: 100%;
-  min-height: 2.8rem;
+  min-height: 2.7rem;
   border: 1px solid var(--color-line);
   border-radius: var(--radius-control);
   background: white;
-  padding: 0 0.75rem;
+  padding: 0 0.7rem;
   font-size: 0.9rem;
 }
 
@@ -309,32 +310,32 @@
 
 .field-error {
   display: block;
-  margin-top: 0.25rem;
+  margin-top: 0.22rem;
   color: var(--color-error);
-  font-size: 0.875rem;
-  line-height: 1.3;
+  font-size: 0.72rem;
+  line-height: 1.25;
 }
 
 .consent-field {
   display: grid;
   grid-template-columns: 1.1rem 1fr;
-  gap: 0.65rem;
+  gap: 0.6rem;
   align-items: start;
-  margin-top: 0.9rem;
+  margin-top: 0.75rem;
   color: var(--color-ink-muted);
-  font-size: 0.875rem;
-  line-height: 1.4;
+  font-size: 0.75rem;
+  line-height: 1.35;
 }
 
 .consent-field input {
   width: 1rem;
   height: 1rem;
-  margin: 0.15rem 0 0;
+  margin: 0.12rem 0 0;
   accent-color: var(--color-ice-deep);
 }
 
 .consent-error {
-  margin-left: 1.75rem;
+  margin-left: 1.7rem;
 }
 
 .assessment-controls {
@@ -342,18 +343,18 @@
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  margin-top: 0.75rem;
+  margin-top: 0.65rem;
 }
 
 .assessment-primary,
 .assessment-back {
   display: inline-flex;
-  min-height: 2.9rem;
+  min-height: 2.8rem;
   align-items: center;
   justify-content: center;
   gap: 0.6rem;
   border: 0;
-  font-size: 0.875rem;
+  font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -375,8 +376,9 @@
 }
 
 .assessment-primary:disabled {
-  background: var(--color-line);
-  color: var(--color-ink-muted);
+  background: var(--color-navy);
+  color: white;
+  opacity: 0.58;
   cursor: not-allowed;
 }
 
@@ -391,37 +393,37 @@
 }
 
 .assessment-privacy {
-  margin: 0.65rem 0 0;
+  margin: 0.55rem 0 0;
   color: var(--color-ink-muted);
-  font-size: 0.66rem;
+  font-size: 0.62rem;
   text-align: center;
 }
 
 .assessment-result {
-  padding: 0.75rem 0 0.25rem;
+  padding: 0.65rem 0 0.2rem;
 }
 
 .result-kicker {
   display: block;
-  margin-bottom: 0.55rem;
+  margin-bottom: 0.5rem;
   color: var(--color-ice-deep);
   font-size: 0.68rem;
   font-weight: 700;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
 }
 
 .assessment-result > p {
   color: var(--color-ink-muted);
-  font-size: 0.9rem;
-  line-height: 1.55;
+  font-size: 0.86rem;
+  line-height: 1.5;
 }
 
 .result-map {
-  margin: 1rem 0 1.15rem;
+  margin: 0.9rem 0 1rem;
   border-left: 3px solid var(--color-ice-deep);
   background: var(--color-mist);
-  padding: 0.8rem 1rem;
+  padding: 0.75rem 0.9rem;
 }
 
 .result-map > span {
@@ -435,7 +437,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.4rem;
-  margin: 0.5rem 0 0;
+  margin: 0.45rem 0 0;
   padding: 0;
   list-style: none;
 }
@@ -444,14 +446,14 @@
   border: 1px solid var(--color-ice);
   border-radius: var(--radius-capsule);
   background: white;
-  padding: 0.3rem 0.55rem;
-  font-size: 0.875rem;
+  padding: 0.28rem 0.5rem;
+  font-size: 0.75rem;
 }
 
 .result-summary {
   display: grid;
-  gap: 0.55rem;
-  margin: 0 0 1.15rem;
+  gap: 0.5rem;
+  margin: 0 0 1rem;
 }
 
 .result-summary > div {
@@ -459,13 +461,13 @@
   grid-template-columns: 7.5rem 1fr;
   gap: 0.75rem;
   border-bottom: 1px solid var(--color-line);
-  padding-bottom: 0.45rem;
+  padding-bottom: 0.4rem;
 }
 
 .result-summary dt,
 .result-summary dd {
   margin: 0;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
 }
 
 .result-summary dt {
@@ -476,13 +478,13 @@
   font-weight: 700;
 }
 
-.result-action {
+.result-action,
+.result-back {
   width: 100%;
 }
 
 .result-back {
-  width: 100%;
-  margin-top: 0.45rem;
+  margin-top: 0.4rem;
 }
 
 .sr-only {
@@ -496,24 +498,36 @@
 }
 
 @media (max-width: 46rem) {
+  .assessment {
+    width: 100%;
+    padding: 1.25rem;
+  }
+
+  .assessment h2,
+  .assessment-result h3 {
+    font-size: clamp(2rem, 8vw, 2.45rem);
+  }
+
   .area-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.65rem;
   }
 
   .area-card {
-    min-height: 8rem;
+    min-height: 8.75rem;
   }
 
   .area-media {
-    height: 5rem;
+    height: 6rem;
+  }
+
+  .area-label {
+    min-height: 2.7rem;
+    font-size: 0.75rem;
   }
 }
 
 @media (max-width: 28rem) {
-  .assessment {
-    padding: 1.15rem;
-  }
-
   .contact-grid {
     grid-template-columns: 1fr;
   }

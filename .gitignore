@@ -5,3 +5,5 @@ dist/
 artifacts/qa/playwright-output/
 artifacts/qa/*.zip
 artifacts/qa/*.webm
+
+.vercel
